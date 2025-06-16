@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
     margin: 0px;
-}
 
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    font-family: "Exo 2", sans-serif;
+    font-size: 1em;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 
 .page_container {
     background-color: green;
@@ -35,7 +40,8 @@ body {
     gap: 15px;
 }
 
-.top_bar button {
+
+.top_bar_top button {
     border: None;
     background: none;
 }
@@ -58,7 +64,7 @@ body {
 
 .input_container {
     display: flex;
-    align-items: stretch;
+    align-items: center;
     justify-content: stretch;
     flex-grow: 1;
 }
@@ -66,6 +72,7 @@ body {
 .input_container > input {
     border-radius: 10px;
     max-width: 100ch;
+    height: 20px;
     flex-grow: 1;
     border: 0px;
     background-color: rgb(176, 213, 232);
@@ -82,11 +89,8 @@ body {
     align-items: center;
     text-decoration: none;
 
-    font-family: "Exo 2", sans-serif;
     font-size: 1em;
-    font-optical-sizing: auto;
     font-weight: bold;
-    font-style: normal;
 
     color: black;
 }
@@ -123,11 +127,8 @@ body {
     margin-top: 20px;
     margin-bottom: 30px;
 
-    font-family: "Exo 2", sans-serif;
     font-size: 1.5em;
-    font-optical-sizing: auto;
     font-weight: bold;
-    font-style: normal;
 }
 
 .link_button {
@@ -138,11 +139,8 @@ body {
 
     margin-bottom: 15px;
 
-    font-family: "Exo 2", sans-serif;
     font-size: 1.1  em;
-    font-optical-sizing: auto;
     font-weight: bold;
-    font-style: normal;
 }
 
 .link_button > span {
@@ -151,4 +149,92 @@ body {
 
 .last_top_option {
     margin-bottom: 40px;
+}
+
+
+.top_bar_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.profile_info_container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.main_profile_image {
+    width: 48px;
+    margin-right: 15px;
+}
+
+.hello_message {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.profile_name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.profile_name > a {
+    text-decoration: none;
+    color: black;
+}
+.profile_name > a:hover {
+    color: blue;
+}
+
+
+.profile_buttons_container button {
+    /* button style */
+    background-color: rgb(56, 126, 246);
+    border: none;
+    padding: 7px 25px 7px 25px;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 5px;
+    
+    /* font style */
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+
+}
+.profile_buttons_container button:hover {
+    background-color: rgb(56, 170, 246);
+}
+.profile_buttons_container button:active {
+    background-color: rgb(56, 214, 246);
+}
+
+
+.main_container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+}
+
+.projects_container {
+    border: 1px solid black;
+    /* display: flex;
+    flex-direction: column;
+    align-items: start; */
+}
+.announcements_and_trending_container {
+    border: 1px solid black;
+}
+
+.projects_tabs_container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.projects_tab {
+    background-color: cornflowerblue;
+    height: 200px;
 }
