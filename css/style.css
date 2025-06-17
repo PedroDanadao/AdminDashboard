@@ -221,13 +221,13 @@ body {
 
 .projects_container {
     border: 1px solid black;
-    /* display: flex;
-    flex-direction: column;
-    align-items: start; */
+    padding-left: 15px;
 }
 
-.projects_div > div {
-    margin-top: 10px;
+.projects_div > div,
+.announcements_div > div,
+.trending_div {
+    margin-top: 25px;
     margin-bottom: 10px;
 }
 
@@ -269,14 +269,21 @@ body {
     align-self: end;
 }
 
+.project_description,
+.announcement_text,
+.trending_project_name {
+    color: rgb(22, 22, 22);
+}
+
 .announcements_and_trending_container {
     border: 1px solid black;
     display: grid;
     grid-template-rows: 0.1fr 1fr 0.1fr 1fr;
+    padding-right: 20px;
 }
 
 .announcements_tabs_container {
-    background-color: darkslategray;
+    background-color: rgb(249, 249, 249);
 
     display: grid;
     grid-template-rows: repeat(2, 1fr 1px) 1fr;
@@ -284,23 +291,48 @@ body {
     border-radius: 10px;
 }
 .announcements_tab {
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
+    padding: 10px;
     /* border-bottom: 1px solid salmon; */
 }
 .last_announcement {
     border-bottom: none;
 }
 .divider {
-    background-color: salmon;
+    background-color: grey;
     margin: 0 10% 0 10%;
+    height: 1px;
+}
+.announcement_title {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.announcement_text {
+    font-size: 0.7em;
 }
 
 .trending_tabs_container {
     background-color: beige;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
+    padding: 10px 15px 0px 15px;
+    border-radius: 5px;
+    margin-bottom: 30px;
 }
 .trending_tab {
-    background-color: darkseagreen;
-    border: 1px solid black;
+    display: flex;
+}
+.avatar_image {
+    width: 36px;
+    height: 36px;
+}
+.trending_text {
+    margin-left: 10px;
+}
+.avatar_nick {
+    font-weight: bold;
+}
+.avatar_nick,
+.avatar_project_name {
+    font-size: 0.7em;
 }
